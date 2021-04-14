@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".InputActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".InputActivity">
+
+        <LinearLayout
+            android:id="@+id/avatar_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/input_item_margin"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="头像"
+                android:textSize="@dimen/input_item_size"></TextView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginHorizontal="30dp"
+                >
+
+                <ImageView
+                    android:id="@+id/avatar_image"
+                    android:layout_width="@dimen/avatar_size"
+                    android:layout_height="@dimen/avatar_size"
+                    android:src="@drawable/default_avatar"></ImageView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/input_item_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="学号"
+                android:textSize="@dimen/input_item_size"></TextView>
+
+            <EditText
+                android:id="@+id/student_id"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginHorizontal="30dp"
+                android:hint="请输入学号"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/input_item_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="姓名"
+                android:textSize="@dimen/input_item_size"></TextView>
+
+            <EditText
+                android:id="@+id/student_name"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginHorizontal="30dp"
+                android:hint="请输入姓名"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_margin="@dimen/input_item_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="性别"
+                android:textSize="@dimen/input_item_size"></TextView>
+
+            <RadioGroup
+                android:id="@+id/student_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:id="@+id/student_gender_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:textSize="@dimen/input_item_size"
+                    android:text="男"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/student_gender_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:textSize="@dimen/input_item_size"
+                    android:text="女"></RadioButton>
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/input_item_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="籍贯"
+                android:textSize="@dimen/input_item_size"></TextView>
+
+            <Spinner
+                android:id="@+id/student_province"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:entries="@array/province"
+                android:spinnerMode="dialog"></Spinner>
+
+            <Spinner
+                android:id="@+id/student_city"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:entries="@array/def"
+                android:spinnerMode="dialog"></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/input_item_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="学院"
+                android:textSize="@dimen/input_item_size"></TextView>
+
+            <Spinner
+                android:id="@+id/student_college"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:entries="@array/college"
+                android:layout_marginStart="30dp"
+                android:spinnerMode="dialog"></Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/input_item_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="成绩"
+                android:textSize="@dimen/input_item_size"></TextView>
+
+            <EditText
+                android:id="@+id/student_gpa"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginHorizontal="30dp"
+                android:hint="请输入成绩"></EditText>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/input_submit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="@dimen/welcome_button_margin"
+            android:layout_marginRight="@dimen/welcome_button_margin"
+            android:layout_gravity="bottom"
+            android:padding="@dimen/welcome_button_padding"
+            android:text="确认提交"></Button>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

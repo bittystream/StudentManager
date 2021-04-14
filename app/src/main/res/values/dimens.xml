@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_font_size">48sp</dimen>
+    <dimen name="button_font_size">30sp</dimen>
+    <dimen name="welcome_button_padding">20dp</dimen>
+    <dimen name="welcome_button_margin">50dp</dimen>
+    <dimen name="input_item_size">30dp</dimen>
+    <dimen name="avatar_size">50dp</dimen>
+    <dimen name="display_avatar_size">90dp</dimen>
+    <dimen name="input_item_margin">20dp</dimen>
+    <dimen name="filter_font_size">20sp</dimen>
+</resources>
